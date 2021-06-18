@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Alert - Mazer Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/sweetalert2/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">메뉴</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>한 눈에 쏙</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>학급 쿠폰</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="layout-default.html">학급 쿠폰 상점</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">▼ 교실 속 전자 지갑</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>통장</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="table-datatable.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>은행 상품</span>
+                            </a>
+                        </li>
+
+                    
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <span>주식 변화 상황</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-chart-chartjs.html">ChartJS</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-chart-apexcharts.html">주식 현재 상황</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">▼ 교실 이야기</li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pentagon-fill"></i>
+                                <span>명예의 전당</span>
+                            </a>
+                            <ul class="submenu ">
+
+                                <li class="submenu-item ">
+                                    <a href="ui-widgets-pricing.html">명예의 전당</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="application-chat.html" class='sidebar-link'>
+                                <i class="bi bi-chat-dots-fill"></i>
+                                <span>학급 채팅</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-gallery.html" class='sidebar-link'>
+                                <i class="bi bi-image-fill"></i>
+                                <span>우리 반 사진첩</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-title">▼ 사용법</li>
+
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-collection-fill"></i>
+                                <span>사용 설명서</span>
+                            </a>
+                            <ul class="submenu active">
+                                <li class="submenu-item  ">
+                                    <a href="extra-component-avatar.html">우리 학급 헌법</a>
+                                </li>
+                                <li class="submenu-item active">
+                                    <a href="extra-component-sweetalert.html">이번 달 1인 1역할</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-toastify.html">NFC 사용법</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-divider.html">Q&A</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>1인 1역할</h3>
+                            <p class="text-subtitle text-muted">당신의 직업은 무엇인가요?</p>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-2 order-first">
+                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">홈으로</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">1인 1역할(나의 직업)</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <section class="section">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">5월달 1인 1역할(나의 직업)</h4>
+                                    <p class="text-muted">자신이 맡은 일은 정확히 해결하는 모습이 필요해요!</p>
+                                </div>
+                                <div class="card-body">
+
+                                        <img src="assets/images/logo/111.jpg" width="700px" />
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">6월달 1인 1역할(나의 직업)</h4>
+                                    <p class="text-muted">자신이 맡은 일은 정확히 해결하는 모습이 필요해요!</p>
+                                </div>
+                                <div class="card-body">
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">7월달 1인 1역할(나의 직업 )</h4>
+                                    <p class="text-muted">자신이 맡은 일은 정확히 해결하는 모습이 필요해요!</p>
+                                </div>
+                                <div class="card-body">
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 &copy; Mazer</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/extensions/sweetalert2.js"></script>
+    <script src="assets/vendors/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

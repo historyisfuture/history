@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table - Mazer Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<div id="app">
+    <div id="sidebar" class="active">
+        <div class="sidebar-wrapper active">
+            <div class="sidebar-header">
+                <div class="d-flex justify-content-between">
+                    <div class="logo">
+
+                    </div>
+                    <div class="toggler">
+                        <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul class="menu">
+                    <li class="sidebar-title">메뉴</li>
+
+                    <li class="sidebar-item ">
+                        <a href="index.html" class='sidebar-link'>
+                            <i class="bi bi-grid-fill"></i>
+                            <span>홈</span>
+                        </a>
+                    </li>
+
+
+                    <li class="sidebar-title">▼ 온라인 교과서</li>
+
+                    <li class="sidebar-item active ">
+                        <a href="table.html" class='sidebar-link'>
+                            <i class="bi bi-grid-1x2-fill"></i>
+                            <span>온라인 교과서 바로가기</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item ">
+                        <a href="ui-chart-apexcharts.html" class='sidebar-link'>
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <span>Scene나리오</span>
+                        </a>
+
+                    </li>
+
+                    <li class="sidebar-title">▼ 오프라인 교과서</li>
+
+                    <li class="sidebar-item ">
+                        <a href="ui-widgets-pricing.html" class='sidebar-link'>
+                            <i class="bi bi-pentagon-fill"></i>
+                            <span>#역사 타임머Scene</span>
+                        </a>
+
+                    </li>
+
+
+                    <li class="sidebar-item  ">
+                        <a href="application-chat.html" class='sidebar-link'>
+                            <i class="bi bi-chat-dots-fill"></i>
+                            <span>역사 인물 말판</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item  ">
+                        <a href="application-gallery.html" class='sidebar-link'>
+                            <i class="bi bi-image-fill"></i>
+                            <span>학습 보조 자료</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-title">▼ 보드게임</li>
+
+                    <li class="sidebar-item ">
+                        <a href="extra-component-avatar.html" class='sidebar-link'>
+                            <i class="bi bi-collection-fill"></i>
+                            <span>On라인 보드게임</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item ">
+                        <a href="layout-default.html" class='sidebar-link'>
+                            <i class="bi bi-grid-1x2-fill"></i>
+                            <span>하이봇</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+        </div>
+    </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3><img src="assets/images/logo/88.png" width=600px></h3>
+                            <p class="text-subtitle text-muted"> </p>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-2 order-first">
+                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">홈으로</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">온라인 교과서 바로가기</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hoverable rows start -->
+                <section class="section">
+                    <div class="row" id="table-hover-row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">온라인 교과서는 "문화"를 소재로 중 9개 주제로 구성되어있습니다.</h4>
+                                </div>
+                                <div class="card-content">
+
+                                    <!-- table hover -->
+                                    <div class="table-responsive">
+                                        <table class="table table-hover mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>티켓 번호</th>
+                                                    <th>주제</th>
+                                                    <th>배울 내용</th>
+                                                    <th>교과서 쪽수</th>
+                                                    <th>링크</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-bold-500">No.1</td>
+                                                    <td>고구려와 백제의 문화유산 여행</td>
+                                                    <td><img src="assets/images/logo/no1.jpg" width="300px"></td>
+                                                    <td class="text-bold-500">22-25쪽</td>
+                                                    <td><a href="https://sites.google.com/d/1BfZNqSpuBi7r1dz1U8k_ToERGF6Zqwmd/p/105_Km5OOLrxT5N1Uiw2Dn_v1k62Xl7q6/edit">https://sites.google.com/d/1BfZNqSpuBi7r1dz1U8k_ToERGF6Zqwmd/p/105_Km5OOLrxT5N1Uiw2Dn_v1k62Xl7q6/edit</a></td>
+                                                </tr>
+ 
+                                                <tr>
+                                                    <td class="text-bold-500">No.2</td>
+                                                    <td>신라와 가야의 문화유산 여행</td>
+                                                    <td><img src="assets/images/logo/no2.jpg" width="300px"></td>
+                                                    <td class="text-bold-500">26-28쪽</td>
+                                                    
+                                                    <td><a href="https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit">https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-bold-500">No.3</td>
+                                                    <td>불국사와 석굴암 여행</td>
+                                                    <td><img src="assets/images/logo/no3.jpg" width="300px"></td>
+                                                    <td class="text-bold-500">29-33쪽</td>
+                                                    <td><a href="https://sites.google.com/d/1VJ9Xq1o6n7h6hwcrfAZL_0my-cD_RA6y/p/1DuhIV82WlCYLw72aAfgxVRkmG8_2vLZG/edit">https://sites.google.com/d/1VJ9Xq1o6n7h6hwcrfAZL_0my-cD_RA6y/p/1DuhIV82WlCYLw72aAfgxVRkmG8_2vLZG/edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-bold-500">No.4</td>
+                                                    <td>고려청자와 만나는 여행</td>
+                                                    <td><img src="assets/images/logo/no4.png" width="300px"></td>
+                                                    <td class="text-bold-500">45-47쪽</td>
+
+                                                    <td><a href="https://sites.google.com/d/1gbmmO1hQYEdu4OdKYV8_Z9muUGlpQ_w_/p/128KGDJbrT7zIa1RBCOs1UX7UE_nWxcUx/edit">https://sites.google.com/d/1gbmmO1hQYEdu4OdKYV8_Z9muUGlpQ_w_/p/128KGDJbrT7zIa1RBCOs1UX7UE_nWxcUx/edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-bold-500">No.5</td>
+                                                    <td>팔만대장경과 만나는 여행</td>
+                                                    <td><img src="assets/images/logo/no5.png" width="300px"></td>
+                                                    <td class="text-bold-500">48-50쪽</td>
+
+                                                    <td><a href="https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit">https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-bold-500">No.6</td>
+                                                    <td>금속 활자와 만나는 여행</td>
+                                                    <td><img src="assets/images/logo/no6.jpg" width="300px"></td>
+                                                    <td class="text-bold-500">51-53쪽</td>
+
+                                                    <td><a href="https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit">https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-bold-500">No.7</td>
+                                                    <td>세종대왕과 만나는 여행</td>
+                                                    <td><img src="assets/images/logo/no7.png" width="300px"></td>
+                                                    <td class="text-bold-500">60-63쪽</td>
+
+                                                    <td><a href="https://sites.google.com/d/17LvdrFpxwl4azAjWjTXgXoLUnCMzSq8P/p/16TmP0O3Lekksqinw8Zkyh5bmkG8Le6Zh/edit">https://sites.google.com/d/17LvdrFpxwl4azAjWjTXgXoLUnCMzSq8P/p/16TmP0O3Lekksqinw8Zkyh5bmkG8Le6Zh/edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-bold-500">No.8</td>
+                                                    <td>유교 사회로 떠나는 여행</td>
+                                                    <td><img src="assets/images/logo/no8.jpg" width="300px"></td>
+                                                    <td class="text-bold-500">66-68쪽</td>
+
+                                                    <td><a href="https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit">https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-bold-500">No.9</td>
+                                                    <td>조선 후기로 떠나는 여행</td>
+                                                    <td><img src="assets/images/logo/no9.jpg" width="300px"></td>
+                                                    <td class="text-bold-500">95-97쪽</td>
+
+                                                    <td><a href="https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit">https://sites.google.com/d/11axM7LOpoyJfYXs0TLiHQ_RNLGwdiyXC/p/1euHKd1FjMtId467Ayt4q2TrGJS8C_4ER/edit</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Hoverable rows end -->
+                <!-- Hoverable rows start -->
+                <section class="section">
+                    <div class="row" id="table-hover-row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">사고력 쑥쑥 1단원, 2단원 온라인 교과서 자료입니다.</h4>
+                                </div>
+                                <div class="card-content">
+
+                                    <!-- table hover -->
+                                    <div class="table-responsive">
+                                        <table class="table table-hover mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>티켓 번호</th>
+                                                    <th>주제</th>
+                                                    <th>배울 내용</th>
+                                                    <th>교과서 쪽수</th>
+                                                    <th>링크</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>No.10</td>
+                                                    <td class="text-bold-500">1단원 사고력 쑥쑥</td>
+                                                    <td><img src="assets/images/logo/no10.jpg" width="300px"></td>
+                                                    <td>81-83쪽</td>
+                                                    <td class="text-bold-500">https://sites.google.com/d/1VJ9Xq1o6n7h6hwcrfAZL_0my-cD_RA6y/p/1DuhIV82WlCYLw72aAfgxVRkmG8_2vLZG/edit</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>No.11</td>
+                                                    <td class="text-bold-500">2단원 사고력 쑥쑥</td>
+                                                    <td><img src="assets/images/logo/no11.jpg" width="300px"></td>
+                                                    <td>151-153쪽</td>
+                                                    <td class="text-bold-500">https://sites.google.com/d/1VJ9Xq1o6n7h6hwcrfAZL_0my-cD_RA6y/p/1DuhIV82WlCYLw72aAfgxVRkmG8_2vLZG/edit</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Hoverable rows end -->
+                <!-- Hoverable rows start -->
+
+                <!-- Hoverable rows end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>doublechoi</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
